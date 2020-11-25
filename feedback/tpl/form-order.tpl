@@ -1,0 +1,37 @@
+<table border="0" style="background:#3FA1FE; color:#fff; padding:20px;">
+  <tr>
+    <td colspan="2"><strong>Заказ вывоза металла</strong></td>
+  </tr>
+    <tr>
+    <td>%%name.title%%</td>
+    <td>%%name.value%%</td>
+  </tr>
+  <tr>
+    <td>%%tell.title%%</td>
+    <td>%%tell.value%%</td>
+  </tr>
+  <tr>
+    <td>%%dem.title%%</td>
+    <td>%%dem.value%%</td>
+  </tr>
+  <tr>
+    <td>%%vivoz.title%%</td>
+    <td>%%vivoz.value%%</td>
+  </tr>
+  <tr>
+    <td>%%gorod.title%%</td>
+    <td>%%gorod.value%%</td>
+  </tr>
+  <tr>
+    <td>%%ves.title%%</td>
+    <td>%%ves.value%%</td>
+  </tr>
+  <tr>
+    <td>%%tip-metalla.title%%</td>
+    <td>%%tip-metalla.value%%</td>
+  </tr>
+  <tr>
+    <td>%%vid-metalla.title%%</td>
+    <td>%%vid-metalla.value%%</td>
+  </tr>
+</table>

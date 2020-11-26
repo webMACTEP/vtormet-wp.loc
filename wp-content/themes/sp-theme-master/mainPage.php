@@ -183,7 +183,9 @@ get_header(); ?>
 			<?php edit_post_link(__('Редактировать')); ?>
 		<?php endwhile; ?>
 		<?php wp_reset_postdata(); ?>
-		<div style="cursor: pointer" class="price__button">показать ещё</div>
+		<a href="../price">
+			<div style="cursor: pointer" class="price__button">показать ещё</div>
+		</a>
 	</div>
 </section>
 <section class="price-sm">
@@ -197,7 +199,9 @@ get_header(); ?>
 			<?php edit_post_link(__('Редактировать')); ?>
 		<?php endwhile; ?>
 		<?php wp_reset_postdata(); ?>
-		<div style="cursor: pointer" class="price__button">показать ещё</div>
+		<a href="../price">
+			<div style="cursor: pointer" class="price__button">показать ещё</div>
+		</a>
 	</div>
 </section>
 <section class="price-dis">
@@ -212,10 +216,10 @@ get_header(); ?>
 		<?php wp_reset_postdata(); ?>
 	</div>
 </section>
-<!-- <section class="price-dis-sm">
+<section class="price-dis-sm">
 	<div class="container">
 		<div class="price-dis__title">Демонтажные работы</div>
-		<?php $the_query = new WP_Query('p=138'); ?>
+		<?php $the_query = new WP_Query('p=579'); ?>
 		<?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
 
 			<?php the_content(); ?>
@@ -223,7 +227,7 @@ get_header(); ?>
 		<?php endwhile; ?>
 		<?php wp_reset_postdata(); ?>
 	</div>
-</section> -->
+</section>
 <section class="how">
 	<div class="container">
 		<div class="how__title">Как сдать металл</div>
@@ -325,7 +329,9 @@ get_header(); ?>
 			<?php endwhile; ?>
 
 		</div>
-		<div class="news__button">читать все новости</div>
+		<a href="../news">
+			<div class="news__button">читать все новости</div>
+		</a>
 	</div>
 </section>
 <section class="map">

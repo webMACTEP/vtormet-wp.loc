@@ -1,7 +1,3 @@
-.header__logo-small {
-   display: none;
-}
-
 @media (max-width: 1200px) {
    .container {
       width: 95%;
@@ -166,15 +162,15 @@
       justify-content: space-evenly;
    }
 }
-.price-sm {
-   display: none;
-}
 @media (max-width: 576px) {
    .price,
-   .price-dis {
+   .price-dis,
+   .aboutprice {
       display: none;
    }
-   .price-sm {
+   .price-sm,
+   .price-dis-sm,
+   .aboutprice-sm {
       display: block;
    }
    .order__steps {
@@ -187,9 +183,13 @@
       max-width: 100%;
       margin: -1px 0px 0px 0px;
    }
+   .how.uslugipage h1 {
+      text-align: center;
+   }
    .entry-header h1 {
       font-size: 27px;
       text-align: left;
+      text-align: center;
    }
    .wappgroup__blok {
       border: none;
@@ -223,6 +223,10 @@
    }
    .order__button {
       width: 135px;
+   }
+   table {
+      border: 1px solid #dadbdc;
+      margin: -1px 0px 0px 0px;
    }
    table th {
       font-size: 15px;
@@ -341,10 +345,6 @@
    .news__button,
    .faq__button {
       width: 300px;
-   }
-   table img {
-      width: 40px;
-      height: 40px;
    }
    .header__row1 .wrapper {
       justify-content: space-between;

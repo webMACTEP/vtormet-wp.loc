@@ -7,7 +7,7 @@ get_header();
 $sp_obj = new SpClass();
 
 while (have_posts()) : the_post(); ?>
-   <div class="container">
+   <div class="container price-list">
       <div class="page">
 
          <div class="entry-header">
@@ -29,7 +29,7 @@ while (have_posts()) : the_post(); ?>
                   <div class="price-dashboard__download"><img src="<?php echo vm_get_image('download.svg') ?>" alt=""><a href="<?php the_field("price-link", 39); ?>"> Скачать прайс</a></div>
                </div>
                <div class="price-date">Цены актуальны на <?php the_field("price-date", 39); ?></div>
-               <div class=""><?php the_content(); ?></div>
+               <!-- <div class=""><?php the_content(); ?></div> -->
             </div>
          </div>
 
@@ -39,12 +39,20 @@ while (have_posts()) : the_post(); ?>
 
    <section class="aboutprice">
       <div class="container">
-         <?php $the_query = new WP_Query('p=182'); ?>
+         <?php $the_query = new WP_Query('p=586'); ?>
          <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-            <div class="entry-header">
-               <h1><?php the_title(); ?></h1>
-               <div class="title-lines"></div>
-            </div>
+
+            <?php the_content(); ?>
+            <?php edit_post_link(__('Редактировать')); ?>
+         <?php endwhile; ?>
+         <?php wp_reset_postdata(); ?></div>
+   </section>
+
+   <section class="aboutprice-sm">
+      <div class="container">
+         <?php $the_query = new WP_Query('p=583'); ?>
+         <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+
             <?php the_content(); ?>
             <?php edit_post_link(__('Редактировать')); ?>
          <?php endwhile; ?>

@@ -125,6 +125,10 @@ table thead th {
   margin: 0 auto;
 }
 
+.container.price-list {
+  margin-bottom: -45px;
+}
+
 body.lock {
   overflow: hidden;
 }
@@ -440,7 +444,7 @@ body.lock {
   top: -23px;
   left: 0;
   width: 1px;
-  height: 209%;
+  height: 88px;
   background-color: #dadbdc;
 }
 
@@ -450,7 +454,7 @@ body.lock {
   top: -23px;
   right: 0;
   width: 1px;
-  height: 209%;
+  height: 88px;
   background-color: #dadbdc;
 }
 
@@ -1796,7 +1800,9 @@ select {
 
 .modals .checkbox input,
 .modals .radio input {
-  margin: 5px 10px 0px 0px;
+  margin: 5px 12px 0px 3px;
+  width: 15px;
+  height: 15px;
 }
 
 .modals__button {
@@ -2140,4 +2146,14 @@ article {
   background-repeat: no-repeat;
   background-position: 0px 57px;
   line-height: 70px;
+}
+
+.header__logo-small {
+  display: none;
+}
+
+.price-sm,
+.price-dis-sm,
+.aboutprice-sm {
+  display: none;
 }

@@ -64,6 +64,9 @@ table {
 .container {
    max-width: 1170px;
    margin: 0 auto;
+   &.price-list {
+      margin-bottom: -45px;
+   }
 }
 body.lock {
    overflow: hidden;
@@ -319,7 +322,7 @@ body.lock {
          top: -23px;
          left: 0;
          width: 1px;
-         height: 209%;
+         height: 88px;
          background-color: #dadbdc;
       }
       &.button::after {
@@ -328,7 +331,7 @@ body.lock {
          top: -23px;
          right: 0;
          width: 1px;
-         height: 209%;
+         height: 88px;
          background-color: #dadbdc;
       }
 
@@ -1429,7 +1432,9 @@ select {
    .radio {
       display: flex;
       & input {
-         margin: 5px 10px 0px 0px;
+         margin: 5px 12px 0px 3px;
+         width: 15px;
+         height: 15px;
       }
    }
    &__button {
@@ -1534,7 +1539,6 @@ select {
 }
 .page {
    padding: 0px 0px 50px 0px;
-   //min-height: 600px;
    position: relative;
 }
 .aboutprice {
@@ -1726,4 +1730,12 @@ article {
       background-position: 0px 57px;
       line-height: 70px;
    }
+}
+.header__logo-small {
+   display: none;
+}
+.price-sm,
+.price-dis-sm,
+.aboutprice-sm {
+   display: none;
 }

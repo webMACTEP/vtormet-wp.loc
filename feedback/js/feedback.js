@@ -92,7 +92,7 @@ function myconf() {
     var cf = $.Deferred();
     $.ajax({
         type: 'POST',
-        url: 'http://vtormet.gloomberg.ru/feedback/',
+        url: 'http://vtormet-wp.loc/feedback/',
         dataType: 'json',
         data: 'act=cfg',
         success: function (answer) {
@@ -135,7 +135,7 @@ mcf.done(function (conf) {
 
         $.ajax({
             type: 'POST',
-            url: 'http://vtormet.gloomberg.ru/feedback/',
+            url: 'http://vtormet-wp.loc/feedback/',
             cache: false,
             dataType: 'json',
             data: 'act=' + vars.act + '&' + vars.data,
